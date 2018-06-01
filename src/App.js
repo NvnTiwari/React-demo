@@ -21,7 +21,7 @@ class App extends Component {
 
   getUserFromApi() {
     axios.get('https://jsonplaceholder.typicode.com/users')
-    .then(function(response) {
+    .then(response => {
         this.setState({usersApi: response.data})
     })
     .catch(function(error) {
